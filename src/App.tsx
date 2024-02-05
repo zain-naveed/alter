@@ -13,7 +13,6 @@ import { initialConfig } from "shared/utils/interceptor";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./App.css";
-
 function App() {
   const dispatch = useDispatch();
 
