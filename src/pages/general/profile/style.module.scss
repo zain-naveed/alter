@@ -1,0 +1,247 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.profileContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.profileContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.coverContainer {
+  height: 454px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.coverStyle {
+  height: 364px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.coverContentContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 29, 33, 0.7) -9.01%,
+    rgba(29, 31, 34, 0.0001) 103.64%
+  );
+  position: absolute;
+  height: 364px;
+  width: 100%;
+  top: 0;
+}
+
+.coverContentSubContainer {
+  position: absolute;
+  top: 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.liveContainer {
+  background-color: $SECONDARY;
+  height: 26px;
+  width: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.liveLabel {
+  font-size: 13px;
+  font-family: InterMedium;
+  color: white;
+}
+
+.liveIcon {
+  height: 15px;
+  width: 15px;
+}
+
+.liveStreamTitle {
+  font-size: 32px;
+  font-family: PoppinsMedium;
+  color: white;
+  align-self: flex-start;
+  text-align: left;
+  max-width: 512px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.watchBtn {
+  width: 164px;
+  height: 56px;
+  background-color: $PRIMARY;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+}
+
+.contentContainer {
+  width: 90%;
+  display: flex;
+  min-height: 360px;
+  justify-content: center;
+  align-items: center;
+}
+.tabsWrapper {
+  width: 90%;
+}
+
+.aboutText {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+
+.noContentText {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+}
+
+@media screen and (max-width: 768px) {
+  .coverContentSubContainer {
+    top: 50px;
+  }
+
+  .liveContainer {
+    height: 21px;
+    width: 62px;
+    border-radius: 7px;
+  }
+
+  .liveLabel {
+    font-size: 11px;
+  }
+
+  .liveIcon {
+    height: 12px;
+    width: 12px;
+  }
+
+  .liveStreamTitle {
+    font-size: 21px;
+    max-width: 328px;
+  }
+
+  .watchBtn {
+    width: 104px;
+    height: 39px;
+    border-radius: 6px;
+    font-size: 9px;
+  }
+
+  .coverContainer {
+    height: 339px;
+  }
+  .coverStyle {
+    height: 267px;
+  }
+  .coverContentContainer {
+    height: 267px;
+  }
+  .contentContainer {
+    width: 95%;
+  }
+  .tabsWrapper {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .coverContentSubContainer {
+    top: 32px;
+  }
+
+  .liveContainer {
+    height: 21px;
+    width: 62px;
+    border-radius: 7px;
+  }
+
+  .liveLabel {
+    font-size: 11px;
+  }
+
+  .liveIcon {
+    height: 12px;
+    width: 12px;
+  }
+
+  .liveStreamTitle {
+    font-size: 26px;
+    max-width: 410px;
+  }
+
+  .watchBtn {
+    width: 131px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 11px;
+  }
+
+  .coverContainer {
+    height: 339px;
+  }
+  .coverStyle {
+    height: 267px;
+  }
+  .coverContentContainer {
+    height: 267px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .coverContentSubContainer {
+    top: 40px;
+  }
+
+  .liveContainer {
+    height: 26px;
+    width: 78px;
+    border-radius: 8px;
+  }
+
+  .liveLabel {
+    font-size: 13px;
+  }
+
+  .liveIcon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .liveStreamTitle {
+    font-size: 32px;
+  }
+
+  .watchBtn {
+    width: 164px;
+    height: 56px;
+  }
+
+  .coverContainer {
+    height: 424px;
+  }
+  .coverStyle {
+    height: 334px;
+  }
+  .coverContentContainer {
+    height: 334px;
+  }
+}

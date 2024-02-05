@@ -1,0 +1,16 @@
+@import "shared/utils/colors.scss";
+.noContentText {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  max-width: 366px;
+}
+.noContentTextBold {
+  font-family: InterSemiBold;
+  font-size: 14px;
+  color: $GREY;
+}
+
+.fullHeight {
+  height: 100%;
+}

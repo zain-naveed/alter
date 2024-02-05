@@ -1,0 +1,49 @@
+@import "shared/utils/colors.scss";
+.blue{
+    color: $BLUE;
+}
+.stream_container{
+    width: 100%;
+    height: 152px;
+    background: #f8f8f9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stream_head_title{
+    font-family: 'InterRegular';
+    font-weight: 600;
+    color: $GREY;
+    font-size: 12px;
+}
+.stream_type{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #808191;
+    font-family: "InterRegular";
+    margin-top: 10px;
+}
+.white{
+    color: white;
+}
+.preview{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.error{
+    color: #ea5b5b;
+    font-size: 11px;
+    text-align: left;
+    // position: absolute;
+    // top: 78px;
+    z-index: 1;
+    font-size: 14px;
+    height: 26px;
+}
+

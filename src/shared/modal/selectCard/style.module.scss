@@ -1,0 +1,165 @@
+@import "shared/utils/colors.scss";
+
+.header {
+  text-align: right;
+}
+
+.container {
+  padding: 0px 30px 30px !important;
+}
+
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.headingStyle {
+  font-size: 27px;
+  font-family: PoppinsSemiBold;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 12px;
+  color: $BLACK;
+}
+
+.btnStyle {
+  background-color: $PRIMARY;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 13px;
+  width: 100%;
+}
+
+.cardContainer {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 10px;
+  background-color: $ULTRA_LIGHT_GREY;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid $ULTRA_LIGHT_GREY;
+}
+
+.cardContainerLoader {
+  width: 100%;
+  height: 80px;
+  margin: 6px 0;
+}
+
+.cardLoaderItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #e5e4e2;
+}
+
+.cardImgContainer {
+  min-height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImg {
+  height: 38px;
+  width: 38px;
+}
+
+.cardType {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: $BLACK;
+}
+
+.cardValue {
+  font-size: 10px;
+  font-family: InterMedium;
+  color: $GREY;
+}
+
+.selectedPlan {
+  position: absolute;
+  top: 50%;
+  margin-top: -12.5px;
+  right: 15px;
+  height: 26px;
+  width: 26px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $PRIMARY;
+}
+
+.tickStyle {
+  height: 15px;
+  width: 15px;
+}
+
+.cardTopContainer {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.addIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.addIcon path {
+  stroke: $SECONDARY;
+  fill: $SECONDARY;
+  stroke-width: 0px;
+}
+
+.addlabel {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: $SECONDARY;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+
+  .container {
+    padding: 0px 20px 20px !important;
+  }
+
+  .modalContent {
+    width: 100% !important;
+  }
+
+  .btnStyle {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+
+  .modalContent {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+}

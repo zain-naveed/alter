@@ -1,0 +1,149 @@
+@import "shared/utils/colors.scss";
+.container_top_margin {
+  margin-top: 46px;
+}
+.view_button {
+  width: 122px;
+  height: 50px;
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+}
+.heading {
+  font-size: 22px;
+  font-family: PoppinsSemiBold;
+}
+.top_margin {
+  margin-top: 22px;
+}
+.back_sub_cont {
+  position: relative;
+  bottom: 5px;
+}
+.back_sub_title {
+  color: $SECONDARY;
+  font-size: 13px;
+  font-family: InterBold;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.donation_title {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "InterRegular";
+  color: #808191;
+}
+.donation_heading {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.stripe_main_container {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 12px;
+}
+.stripe_top_margin {
+  margin-top: 32px;
+}
+.stripe_container {
+  margin-left: 10px;
+}
+.stripe_heading {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PoppinsRegular";
+}
+.stripe_title {
+  font-size: 12px;
+  font-family: "InterMedium";
+  color: #808191;
+  width: 90%;
+  margin-top: 5px;
+}
+.stripe_remove {
+  height: 45px;
+  width: 134px;
+  color: white;
+  font-family: InterBold;
+  border: 0px;
+  border-radius: 16px;
+  background: #f53649;
+  font-size: 12px;
+}
+.d_input_cont {
+  width: 60%;
+}
+.d_child_cont {
+  display: flex;
+  background: #f8f8f9;
+  border-radius: 14px;
+}
+.d_child_cont_cond {
+  background: transparent;
+  justify-content: flex-end;
+}
+.d_input_cond {
+  display: none;
+}
+.d_input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 10px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.d_input_btn {
+  background-color: #6c5dd3;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 14px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 200px;
+}
+.d_input_btn_cond {
+  background-color: #f53649;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 14px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 140px;
+}
+.disable_don {
+  margin-bottom: 47px;
+}
+.main_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .notification_container {
+    min-width: 80%;
+    width: fit-content;
+  }
+  .main_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .d_input_cont {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

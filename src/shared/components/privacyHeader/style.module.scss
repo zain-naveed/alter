@@ -1,0 +1,154 @@
+@import "shared/utils/colors.scss";
+
+.header_cover {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  top: 0;
+  height: 301px;
+}
+
+.header_container {
+  z-index: 200;
+  position: relative;
+  height: 301px;
+}
+
+.header_nav {
+  display: flex;
+  width: 263px;
+}
+.logo {
+  width: 130px;
+}
+.signupButton {
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: "InterBold";
+  width: 140px;
+  background: $SECONDARY;
+  color: white;
+  font-size: 12px;
+  margin-right: 7px;
+}
+
+.guestButton {
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: "InterBold";
+  min-width: 90px;
+  background: white;
+  color: $SECONDARY;
+  font-size: 12px;
+  margin-right: 7px;
+}
+
+.nav_margin {
+  margin-top: 10px;
+}
+
+.header_heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  font-family: "PoppinsRegular";
+  color: white;
+}
+
+.headerContent {
+  margin-top: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_paragraph {
+  width: 713px;
+  margin-top: 14px;
+  color: #818287;
+}
+
+.stream_button {
+  background-color: #6c5dd3;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 229px;
+  margin: 38px 0;
+}
+
+.macImg {
+  width: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    max-width: 717px !important;
+  }
+
+  .headerContent {
+    margin-top: 41px;
+  }
+
+  .header_heading {
+    font-size: 38px;
+  }
+
+  .header_paragraph {
+    max-width: 89%;
+  }
+  .header_cover {
+    // height: 69vh;
+    height: 232px;
+  }
+
+  .header_nav {
+    width: 179px;
+    margin-right: 17px;
+  }
+
+  .logo {
+    width: 153px;
+    margin-left: 34px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header_heading {
+    font-size: 26px !important;
+  }
+
+  .header_paragraph {
+    max-width: 95%;
+  }
+
+  .header_nav {
+    width: 179px;
+    margin-right: 0 !important;
+  }
+
+  .logo {
+    width: 127px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .header_cover,
+  .header_container {
+    height: 296px;
+  }
+}
+
+@media screen and (min-width: 1262px) {
+  // .header_cover {
+  //     height: 700px;
+  // }
+}

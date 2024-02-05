@@ -1,0 +1,7 @@
+@import "../box/style.module.scss";
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: $GRAYWHITE;
+}

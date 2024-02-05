@@ -1,0 +1,131 @@
+@import "./../customInput/style.module.scss";
+
+.topLevelContainer {
+  position: absolute;
+  bottom: 0;
+  max-width: 471px !important;
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 58px;
+  right: 100px;
+  z-index: 3;
+  height: fit-content;
+  text-align: left;
+  min-height: 410px;
+}
+.title {
+  font-family: PoppinsMedium;
+  font-size: 18px;
+  color: $BLACK;
+  text-align: left;
+}
+
+.notificationsContainer {
+  overflow-y: scroll;
+  max-height: 340px;
+}
+
+.optionContainer {
+  width: 100%;
+  border-bottom: 1px solid white;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionContainer:hover {
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 12px;
+}
+
+.avatarStyle {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.iconContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background-color: $GREEN;
+  height: 18px;
+  width: 18px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 10px;
+  width: 10px;
+}
+
+.user {
+  font-family: InterMedium;
+  font-size: 13px;
+  color: $BLACK;
+  text-align: left;
+}
+.notification_text_loader,.notification_half_loader{
+  width: 200px;
+  height: 8px;
+}
+.notification_half_loader{
+  width: 140px;
+  height: 8px;
+}
+
+.highlighted {
+  font-family: InterBold;
+  font-size: 13px;
+  color: $SECONDARY;
+  text-align: left;
+}
+
+.time {
+  font-family: InterMedium;
+  font-size: 12px;
+  color: $GREY;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .topLevelContainer {
+    top: 58px;
+    right: 100px;
+    max-width: 471px !important;
+    min-height: 410px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topLevelContainer {
+    top: 58px;
+    right: 110px;
+    max-width: 410px !important;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .topLevelContainer {
+    top: 58px;
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topLevelContainer {
+    top: 58px;
+    right: 0px;
+    max-width: 100% !important;
+  }
+}

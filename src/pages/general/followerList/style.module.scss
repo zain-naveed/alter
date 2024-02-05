@@ -1,0 +1,91 @@
+@import "shared/utils/colors.scss";
+.container_top_margin {
+  margin-top: 43px;
+}
+.list_top_margin {
+  margin-top: 22px;
+}
+.search_container {
+  border: 1px solid #e4e4e4;
+  display: flex;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding: 9px 0;
+  input {
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    color: #7a7a7a;
+    font-weight: 600;
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      font-weight: 600;
+      font-family: "InterSemiBold";
+      font-size: 12px;
+    }
+  }
+  svg {
+    margin: 0 9px;
+  }
+}
+.search_heading {
+  font-size: 22px;
+  font-family: PoppinsSemiBold;
+}
+
+.followerContainer {
+  min-height: 300px;
+}
+.noContentStyle {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+.image {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.avatar_name {
+  white-space: nowrap;
+  margin-left: 10px;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+  text-transform: capitalize;
+}
+.search_list {
+  border-bottom: 1px solid #e4e4e4;
+}
+.remove {
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  height: 41px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+  width: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 440px) {
+  .header_container {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .search_container {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,85 @@
+.header {
+  text-align: right;
+}
+.modalContent {
+  width: 594px !important;
+}
+.heading_margin {
+  margin-bottom: 43px;
+}
+.container {
+  padding: 0 42px !important;
+}
+.asterik {
+  color: #ff754c;
+}
+.label {
+  font-size: 12px;
+  font-family: "InterMedium";
+  margin-bottom: 5px;
+  color: #1b1d21;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.headingStyle {
+  font-size: 40px;
+  font-family: PoppinsSemiBold;
+}
+
+.termsCheckBox {
+  color: #ff754c;
+  background-color: transparent;
+  border: 1px solid #808191;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+}
+
+.termsCheckBoxActive {
+  background-color: #ff754c;
+  border: 1px solid #ff754c;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+}
+
+.disableText {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: #808191;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 30px;
+  }
+  .container {
+    padding: 0 25px !important;
+  }
+  .heading_margin {
+    margin-bottom: 25px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 40px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 40px;
+  }
+  .modalContent {
+    width: 594px !important;
+  }
+}

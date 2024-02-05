@@ -1,0 +1,78 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+.comment_container {
+  box-shadow: 0px 0px 10px 0px $LIGHT_GREY;
+  overflow: auto;
+  border-radius: 24px;
+  max-height: 776px;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.streamContainer {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px $LIGHT_GREY;
+  border-radius: 32px;
+}
+
+.trendingContainer {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px $LIGHT_GREY;
+  border-radius: 32px;
+  min-width: 340px;
+  min-height: 475px;
+  overflow-y: auto;
+}
+
+.videoBoxLoader {
+  height: 623px;
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .trendingContainer {
+    min-width: inherit;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trendingContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videoBoxLoader {
+    height: 278px;
+    border-radius: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .videoBoxLoader {
+    height: 371px;
+    border-radius: 22px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .videoBoxLoader {
+    height: 453px;
+    border-radius: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videoBoxLoader {
+    height: 538px;
+    border-radius: 22px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .videoBoxLoader {
+    height: 623px;
+    border-radius: 24px;
+  }
+}

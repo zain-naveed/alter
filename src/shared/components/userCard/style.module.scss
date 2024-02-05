@@ -1,0 +1,102 @@
+@import "shared/utils/colors.scss";
+
+.userContainer {
+  min-width: 96px;
+  width: 12.499999995%;
+  flex: 0 0 12.499%;
+  max-width: 12.499%;
+}
+.userIconContainer {
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  border: 2px solid $DARKBLUE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.userIcon {
+  height: 62px;
+  width: 62px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.greenDot {
+  height: 16px;
+  width: 16px;
+  background-color: $GREEN;
+  position: absolute;
+  border: 2px solid white;
+  top: 2px;
+  right: 0;
+  border-radius: 100%;
+}
+.liveContainer {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  background-color: $SECONDARY;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 13px;
+  font-family: InterBold;
+  color: $BLACK;
+  text-transform: capitalize;
+}
+.subtitle {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: $GREY;
+}
+
+@media screen and (max-width: 576px) {
+  .userContainer {
+    min-width: 96px;
+    width: 33.333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .userContainer {
+    min-width: 96px;
+    width: 33.333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .userContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userContainer {
+    min-width: 96px;
+    width: 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .userContainer {
+    min-width: 96px;
+    width: 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+}

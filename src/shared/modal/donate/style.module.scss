@@ -1,0 +1,142 @@
+@import "shared/utils/colors.scss";
+.header {
+  text-align: right;
+}
+
+.container {
+  padding: 0px 30px 30px !important;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+.headingStyle {
+  font-size: 27px;
+  font-family: PoppinsSemiBold;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 12px;
+  color: $BLACK;
+}
+.btnStyle {
+  background-color: $PRIMARY;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 13px;
+  width: 100%;
+}
+
+.cardContainer {
+  width: 106px;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: $ULTRA_LIGHT_GREY;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid $ULTRA_LIGHT_GREY;
+}
+
+.priceLabel {
+  font-family: PoppinsMedium;
+  font-size: 16px;
+  color: $BLACK;
+  color: $BLACK;
+}
+
+.selectedPlan {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $PRIMARY;
+}
+
+.tickStyle {
+  height: 12px;
+  width: 12px;
+}
+
+.fieldLabel {
+  font-family: InterMedium;
+  font-size: 12px;
+  color: $BLACK;
+}
+
+.asterik {
+  color: $SECONDARY;
+}
+
+.inputContainer {
+  background-color: #f8f8f9;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.inputStyle {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f9;
+  border: 0px;
+  outline: 0;
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $BLACK !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dollarIconContainer {
+  border-right: 2px solid $ULTRA_LIGHT_GREY;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dollarIcon {
+  height: 22px;
+  width: 22px;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .container {
+    padding: 0px 20px 20px !important;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+  .btnStyle {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+}

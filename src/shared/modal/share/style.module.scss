@@ -1,0 +1,87 @@
+@import "shared/utils/colors.scss";
+.header {
+  text-align: right;
+}
+.modalContent {
+  width: 594px !important;
+}
+.container {
+  padding: 0px 42px 42px !important;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+.headingStyle {
+  font-size: 32px;
+  font-family: PoppinsSemiBold;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $BLACK;
+}
+.copyLabel {
+  font-family: InterMedium;
+  font-size: 12px;
+  color: $BLACK;
+}
+.shareLink {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $BLACK;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+.btnStyle {
+  background-color: #6c5dd3;
+  color: white;
+  height: 40px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 70px;
+}
+
+.fieldContainer {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  background-color: $ULTRA_LIGHT_GREY;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 30px;
+  }
+  .container {
+    padding: 0 25px 25px !important;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 40px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 32px;
+  }
+  .modalContent {
+    width: 594px !important;
+  }
+}

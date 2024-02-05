@@ -1,0 +1,10 @@
+@import "../../sideNavItem/style.module.scss";
+
+.sideCanvasItemContainer {
+  height: 56px;
+  min-height: 56px;
+  width: 216px;
+  min-width: 216px;
+  border-radius: 12px;
+  align-self: center;
+}

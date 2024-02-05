@@ -1,0 +1,10 @@
+.video-js .vjs-fullscreen-control {
+  margin-left: auto !important;
+}
+/* .video-js .vjs-current-time{
+    display: none ;
+} */
+
+.vjs-control-bar {
+  background: rgba(0, 0, 0, 0.5) !important;
+}

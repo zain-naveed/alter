@@ -1,0 +1,51 @@
+@import "shared/utils/colors.scss";
+.img {
+  margin: 0 auto !important;
+}
+.small_icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.large_icon {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.save,
+.cancel {
+  background-color: #6c5dd3;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 108px;
+}
+.save {
+  margin-left: 10px;
+}
+.cancel {
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+}
+
+.heading {
+  font-size: 25px;
+  font-family: PoppinsSemiBold;
+}
+.heading_margin {
+  margin-bottom: 25px !important;
+}
+.cross {
+  position: relative;
+  left: 93%;
+  /* width: 81px; */
+  width: 32px;
+  cursor: pointer;
+}
+@media screen and (max-width: 567px) {
+  .main_container {
+    margin-left: 0 !important;
+  }
+}

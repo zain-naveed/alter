@@ -1,0 +1,111 @@
+@import "shared/utils/colors.scss";
+.t_heading {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "InterMedium";
+  // min-width: 16%;
+  padding: 0px 18px !important;
+  // width: 200px;
+}
+.t_userName {
+  font-size: 14px;
+  font-family: InterBold;
+}
+.t_avatar {
+  margin-left: 12px;
+}
+.t_avatar_title {
+  font-size: 13px;
+  font-family: InterRegular;
+  color: $GREY;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+.image {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.gray {
+  color: $GREY;
+  font-size: 13px;
+  font-family: InterRegular;
+  white-space: nowrap;
+}
+.td_padding {
+  padding: 24px 0 !important;
+}
+.icon path {
+  fill: #6c5dd3;
+}
+.closeIcon rect {
+  fill: red;
+}
+.icon_edit_button,
+.icon_view,
+.icon_close {
+  color: white;
+  // height: 50px;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  // width: 100%;
+  background: rgba(108, 93, 211, 0.1);
+}
+// .icon_view{
+//     background-color: rgba(127, 186, 122, 0.1);
+// }
+.icon_close {
+  background-color: rgba(245, 54, 73, 0.1);
+}
+.icon_edit_button {
+  background-color: rgba(127, 186, 122, 0.1);
+  padding: 8px 10px;
+  margin: 0 10px;
+}
+.action_padding {
+  padding: 16px 0 !important;
+  width: 100px;
+}
+.view_button {
+  width: 122px;
+  height: 50px;
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+}
+.back_sub_cont {
+  position: relative;
+  bottom: -14px;
+}
+.back_sub_title {
+  color: $SECONDARY;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .td_head_item {
+    min-width: 190px;
+  }
+}
+.td_head_item {
+  min-width: 100px;
+}
+.item_padding_left {
+  padding-left: 32px !important;
+}
+.loaderContainer {
+  height: 350px;
+}

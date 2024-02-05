@@ -1,0 +1,144 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+.shortContainer {
+  border-bottom: 1px solid #e4e4e4;
+  background-color: white;
+}
+
+.videoStyle {
+  height: 400px;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.btnCount {
+  height: 14px;
+  width: 90%;
+}
+
+.inActivebtnStyle {
+  height: 56px;
+  border-radius: 16px;
+  width: 56px;
+}
+
+.userIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.userTitle {
+  height: 18px;
+  width: 30%;
+  text-align: left;
+}
+.streamTitle {
+  height: 21px;
+  width: 90%;
+  text-align: left;
+}
+.streamDesc {
+  height: 14px;
+  width: 70%;
+}
+
+.streamDesc2 {
+  height: 14px;
+  width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .userIconContainer {
+    height: 40px;
+    width: 40px;
+  }
+
+  .userIcon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .userTitle {
+    height: 16px;
+  }
+  .streamTitle {
+    height: 18px;
+  }
+  .streamDesc {
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .videoStyle {
+    height: 342px;
+  }
+  .inActivebtnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  .btnIconStyle {
+    height: 20px;
+    width: 20px;
+  }
+  .btnCount {
+    height: 12px;
+  }
+  .userTitle {
+    height: 14px;
+  }
+  .streamTitle {
+    height: 16px;
+  }
+  .streamDesc {
+    height: 10px;
+  }
+  .userIconContainer {
+    height: 30px;
+    width: 30px;
+  }
+
+  .userIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .videoStyle {
+    height: 246px;
+  }
+  .inActivebtnStyle {
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+  }
+  .btnIconStyle {
+    height: 16px;
+    width: 16px;
+  }
+  .btnCount {
+    height: 8px;
+  }
+  .userTitle {
+    height: 12px;
+  }
+  .streamTitle {
+    height: 14px;
+  }
+  .streamDesc {
+    height: 8px;
+  }
+  .userIconContainer {
+    height: 25px;
+    width: 25px;
+  }
+
+  .userIcon {
+    height: 25px;
+    width: 25px;
+  }
+}

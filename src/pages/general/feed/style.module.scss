@@ -1,0 +1,301 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.feedlabel {
+  font-size: 24px;
+  font-family: PoppinsSemiBold;
+  color: $BLACK;
+}
+.dropDownContainer {
+  width: 235px;
+}
+.selectionStyle {
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  outline: 0;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.inputContainerStyle {
+  background-color: rgba(228, 228, 228, 0.49776);
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.iconStyle path {
+  stroke: $BLACK !important;
+  stroke-width: 2;
+}
+
+.customBtnContainer {
+  background-color: rgba(228, 228, 228, 0.4);
+  color: $BLACK;
+  height: 56px;
+  width: 200px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+}
+
+.titleIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.feedIcon {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .dropDownContainer {
+    width: 160px;
+  }
+  .inputContainerStyle {
+    height: 46px;
+    border-radius: 10px;
+  }
+  .feedIcon {
+    height: 15px;
+    width: 15px;
+  }
+  .feedIcon2 {
+    height: 20px;
+    width: 20px;
+  }
+  .feedlabel {
+    font-size: 15px;
+  }
+  .selectionStyle {
+    font-size: 12px;
+  }
+  .titleIcon {
+    height: 22px;
+    width: 22px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .dropDownContainer {
+    width: 188px;
+  }
+  .inputContainerStyle {
+    height: 46px;
+    border-radius: 10px;
+  }
+  .feedIcon {
+    height: 16px;
+    width: 16px;
+  }
+  .feedIcon2 {
+    height: 20px;
+    width: 20px;
+  }
+  .feedlabel {
+    font-size: 19px;
+  }
+  .selectionStyle {
+    font-size: 13px;
+  }
+  .titleIcon {
+    height: 22px;
+    width: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .dropDownContainer {
+    width: 235px;
+  }
+  .inputContainerStyle {
+    height: 56px;
+  }
+  .feedIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .feedIcon2 {
+    height: 24px;
+    width: 24px;
+  }
+  .feedlabel {
+    font-size: 24px;
+  }
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .titleIcon {
+    height: 30px;
+    width: 30px;
+  }
+}

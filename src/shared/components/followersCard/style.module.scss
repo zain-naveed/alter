@@ -1,0 +1,67 @@
+@import "../../../pages/general/feed/style.module.scss";
+
+.followersContainer {
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  border-radius: 24px;
+  background-color: white;
+}
+
+.followerVerticalSubContainer {
+  overflow-y: hidden;
+  flex-wrap: wrap;
+}
+
+.followerSubContainer {
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.followerSubContainer::-webkit-scrollbar {
+  height: 6px;
+  display: none;
+}
+
+.noContentStyle {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+
+.customBtnContainer {
+  background-color: transparent;
+  color: $GREY;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customBtnContainer:hover {
+  background-color: $ULTRA_LIGHT_GREY;
+}
+
+.arrowIconStyle {
+  margin-right: 5px;
+}
+
+.arrowIconContainer {
+  height: 24px;
+  width: 24px;
+  background-color: $SECONDARY;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrowIconDisable {
+  background-color: $GREY !important;
+}

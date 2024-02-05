@@ -1,0 +1,31 @@
+@import "shared/utils/colors.scss";
+
+.image {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+.avatar_name {
+  margin-left: 10px;
+  height: 20px;
+  width: 80px;
+}
+.search_list {
+  border-bottom: 1px solid #e4e4e4;
+}
+.follow,
+.following {
+  background: $PRIMARY;
+  color: white;
+  height: 41px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+  width: 89px;
+}
+.following {
+  width: 110px;
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+}

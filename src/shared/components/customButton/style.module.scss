@@ -1,0 +1,11 @@
+@import "../../utils/colors.scss";
+.customBtnContainer {
+  background-color: $PRIMARY;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 100%;
+}

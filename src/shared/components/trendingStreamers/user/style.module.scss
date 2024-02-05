@@ -1,0 +1,29 @@
+@import "shared/utils/colors.scss";
+
+.photoStyle {
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.liveDot {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: $SECONDARY;
+}
+
+.userTitle {
+  font-size: 13px;
+  font-family: InterMedium;
+  color: $BLACK;
+  text-align: left;
+}
+
+.viewerLabel {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: $GREY;
+  text-align: left;
+}

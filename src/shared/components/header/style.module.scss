@@ -1,0 +1,210 @@
+@import "../../utils/colors.scss";
+
+.headerContainer {
+  min-height: 81px;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: white;
+  z-index: 105;
+  /* min-width: 100% !important; */
+}
+
+nav {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+}
+
+.headerText {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: $GREY;
+}
+
+.searchInputContainer {
+  height: 100%;
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  max-height: 46px;
+}
+
+.searchInputStyle {
+  outline: 0px;
+  border: 0px;
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $BLACK !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.searchInputContainerActive {
+  border: 1px solid #e4e4e4;
+}
+
+.searchInputStyle::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: InterSemiBold;
+  color: $GREY;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+.searchInputStyle:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: InterSemiBold;
+  color: $GREY;
+  font-size: 14px;
+}
+
+.searchInputStyle::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: InterSemiBold;
+  color: $GREY;
+  font-size: 14px;
+}
+
+.notificationContainer {
+  min-height: 45px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificationText {
+  font-size: 9px;
+  font-family: InterMedium;
+  color: white;
+}
+
+.notificationTextContainer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: $SECONDARY;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.headerAvatarIcon {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.arrowIcon {
+  height: 34px;
+  width: 34px;
+}
+
+.lgnBtn {
+  background: #ffffff;
+  border-radius: 7px;
+  outline: 0;
+  width: 80px;
+  height: 50px;
+  color: $SECONDARY;
+  font-family: InterBold;
+  font-size: 12px;
+  border: 2px solid $SECONDARY;
+}
+
+.RegBtn {
+  background: $SECONDARY;
+  border-radius: 7px;
+  outline: 0;
+  width: 100px;
+  height: 50px;
+  color: white;
+  font-family: InterBold;
+  font-size: 12px;
+  border: 2px solid $SECONDARY;
+}
+
+@media screen and (max-width: 900px) {
+  .icon {
+    height: 24px;
+    width: 24px;
+  }
+  .headerText {
+    font-size: 12px;
+  }
+  .notificationContainer {
+    min-height: 40px;
+    min-width: 40px;
+  }
+  .notificationTextContainer {
+    height: 14px;
+    width: 14px;
+  }
+  .notificationText {
+    font-size: 10px;
+  }
+  .headerAvatarIcon {
+    height: 44px;
+    width: 44px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .icon {
+    height: 22px;
+    width: 22px;
+  }
+  .headerText {
+    font-size: 12px;
+  }
+  .notificationContainer {
+    min-height: 35px;
+    min-width: 35px;
+  }
+  .notificationTextContainer {
+    height: 12px;
+    width: 12px;
+  }
+  .notificationText {
+    font-size: 8px;
+  }
+  .headerAvatarIcon {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  .headerText {
+    font-size: 10px;
+  }
+  .notificationContainer {
+    min-height: 30px;
+    min-width: 30px;
+  }
+  .notificationTextContainer {
+    height: 10px;
+    width: 10px;
+  }
+  .notificationText {
+    font-size: 6px;
+  }
+  .headerAvatarIcon {
+    height: 35px;
+    width: 35px;
+  }
+}

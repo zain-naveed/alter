@@ -1,0 +1,253 @@
+@import "../../utils/colors.scss";
+
+.gameCardContainer {
+  box-shadow: 0px 0px 10px 0px $LIGHT_GREY;
+  border-radius: 24px;
+  background-color: white;
+}
+.lightGreyBorder {
+  border: 5px solid $ULTRA_LIGHT_GREY;
+  border-radius: 30px;
+}
+
+.imgStyle {
+  height: 170px;
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  object-fit: cover;
+}
+
+.durationContainer {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: rgba(27, 29, 33, 0.7);
+  color: white;
+  border-radius: 5px;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $SECONDARY;
+  height: 4px;
+  width: 0%;
+  // max-width: 242.4px;
+}
+
+.durationText {
+  color: white;
+  font-size: 13px;
+  font-family: InterBold;
+}
+
+.cardContent {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titleLabel {
+  font-size: 18px;
+  font-family: PoppinsMedium;
+  color: $BLACK;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 54px;
+}
+
+.userIconStyle {
+  height: 32px;
+  width: 32px !important;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.usertitle {
+  font-family: InterMedium;
+  font-size: 13px;
+  color: $BLACK;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.username {
+  font-family: InterMedium;
+  font-size: 12px;
+  color: $GREY;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.cardbtmContainer {
+  border-top: 1px solid #e4e4e4;
+}
+
+.activeContainer {
+  height: 24px;
+  background-color: $SECONDARY;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.livetext {
+  font-size: 13px;
+  font-family: InterMedium;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.blueTextContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.greenTextContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.bluedot {
+  background-color: $DARKBLUE;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+}
+
+.greenDot {
+  background-color: $GREEN;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+}
+
+.btmText {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: $GREY;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.actionContainer {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 50%;
+  margin-left: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85px;
+  // z-index: 999;
+}
+
+.actionIconContainer {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actionIcon {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .gameCardTopContainer {
+    min-width: 70%;
+    width: 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 50%;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 33.3333%;
+    width: 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gameCardTopContainer {
+    padding: 5px;
+    min-width: 25%;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 25%;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 25%;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 20%;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .gameCardTopContainer {
+    padding: 10px;
+    min-width: 16.666667%;
+    width: 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}

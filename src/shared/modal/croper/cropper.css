@@ -1,0 +1,45 @@
+@import "shared/utils/colors.scss";
+.ReactCrop {
+  max-height: 300px;
+  width: 100%;
+}
+#myinput {
+  background: linear-gradient(
+    to right,
+    #ff754c 0%,
+    #f0f3f6 0%,
+    #f0f3f6 50%,
+    #f0f3f6 100%
+  );
+  border: none;
+  border-radius: 8px;
+  height: 3px;
+  width: 273px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+#myinput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff754c;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.reactEasyCrop_Container {
+  min-height: 274px !important;
+  width: 100% !important;
+  max-height: 274px !important;
+  position: relative !important;
+}
+.reactEasyCrop_CropArea {
+  /* width: 357.05px !important;
+  height: 140.05px !important; */
+}
+.cropper {
+  width: 100%;
+}

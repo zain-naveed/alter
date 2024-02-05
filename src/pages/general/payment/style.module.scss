@@ -1,0 +1,143 @@
+@import "shared/utils/colors.scss";
+.view_button {
+  width: 122px;
+  height: 50px;
+  background: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+}
+.top_margin {
+  margin-top: 22px;
+}
+.stripe_top_margin {
+  margin-top: 32px;
+}
+.heading {
+  font-size: 22px;
+  font-family: PoppinsSemiBold;
+}
+.stripe_main_container {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 50px;
+}
+.stripe_av {
+  margin-left: 10px;
+}
+.stripe_container {
+  margin-left: 10px;
+}
+.stripe_heading {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PoppinsRegular";
+}
+.stripe_title {
+  font-size: 12px;
+  font-family: "InterMedium";
+  color: #808191;
+}
+.stripe_remove,
+.stripe_add {
+  height: 45px;
+  width: 134px;
+  color: white;
+  font-family: InterBold;
+  border: 0px;
+  border-radius: 16px;
+  background: #f53649;
+  font-size: 12px;
+}
+.stripe_add {
+  background-color: $PRIMARY;
+}
+.card_item,
+.addCard {
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  border-radius: 9px;
+  margin-right: 10px;
+}
+.card_item_loader{
+  height: 150px;
+  border-radius: 9px;
+  margin-right: 10px;
+  width: 300px;
+}
+.addCard {
+  border: 2px dashed #b8c4cf;
+  background: $ULTRA_LIGHT_GREY;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.card_heading,
+.card_number {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: white;
+}
+.card_number {
+  font-size: 22px;
+}
+.card_name_cont {
+  position: relative;
+  top: 12px;
+}
+.more circle {
+  fill: white;
+}
+.active_card {
+  margin-right: 5px;
+}
+.card_num_cont {
+  position: relative;
+  top: 67px;
+}
+.card_valid {
+  font-size: 12px;
+  color: white;
+}
+.card_date {
+  font-weight: 700;
+  color: white;
+  font-family: "InterMedium";
+  font-size: 13px;
+  margin-left: 7px;
+}
+.addCard_label {
+  color: #808191;
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: "InterMedium";
+}
+.addCard_border {
+  padding-bottom: 47px;
+
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 50px;
+}
+.container_top_margin {
+  margin-top: 46px;
+}
+.back_sub_cont {
+  position: relative;
+  bottom: 5px;
+}
+.back_sub_title {
+  color: $SECONDARY;
+  font-size: 13px;
+  font-family: InterBold;
+  margin-left: 8px;
+  cursor: pointer;
+}

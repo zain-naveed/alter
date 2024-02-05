@@ -1,0 +1,117 @@
+@import "shared/utils/colors.scss";
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingStyle {
+  font-size: 24px;
+  font-family: PoppinsMedium;
+}
+
+.filter_Container {
+  min-width: 235px;
+}
+
+.selectionStyle {
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  outline: 0;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.inputContainer {
+  background-color: rgba(228, 228, 228, 0.49776);
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.iconStyle path {
+  stroke: $BLACK !important;
+  stroke-width: 2;
+}
+.comment_list_container {
+  max-height: 568px;
+  min-height: 395px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.comment_list_container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comment_list_container::-webkit-scrollbar-thumb {
+  background-color: #ff754c;
+  border-radius: 100px;
+}
+
+.comment_list_container::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  background-color: #f1f3f6;
+}
+
+.noCommentTitle {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: $GREY;
+}
+
+.noCommentSubTitle {
+  font-size: 14px;
+  font-family: InterRegular;
+  color: $GREY;
+}
+
+@media screen and (max-width: 767px) {
+  .filter_Container {
+    min-width: 125px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 21px;
+  }
+  .selectionStyle {
+    font-size: 12px;
+  }
+  .inputContainer {
+    height: 40px;
+    border-radius: 7px;
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 21px;
+  }
+  .selectionStyle {
+    font-size: 13px;
+  }
+  .inputContainer {
+    height: 40px;
+    border-radius: 7px;
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .selectionStyle {
+    font-size: 14px;
+  }
+  .inputContainer {
+    height: 56px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,111 @@
+@import "shared/utils/colors.scss";
+.header {
+  text-align: right;
+}
+.container {
+  padding: 0px 30px 30px !important;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+.headingStyle {
+  font-size: 24px;
+  font-family: PoppinsSemiBold;
+  text-align: center;
+}
+
+.userImg {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 16px;
+  font-family: PoppinsMedium;
+  color: $BLACK;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 12px;
+  color: $GREY;
+}
+
+.detailTitle {
+  font-size: 14px;
+  font-family: InterSemiBold;
+  color: $BLACK;
+}
+
+.detailValue {
+  font-size: 16px;
+  font-family: PoppinsRegular;
+  color: $GREY;
+}
+
+.detailContainer {
+  border-bottom: 1px solid $LIGHT_GREY;
+}
+
+.changeBtn {
+  background-color: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  height: 56px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 200px;
+}
+
+.canceBtn {
+  background-color: $PRIMARY;
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .container {
+    padding: 0px 20px 20px !important;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+  .changeBtn {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 140px;
+  }
+  .canceBtn {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 140px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+}

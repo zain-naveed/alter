@@ -1,0 +1,58 @@
+@import "shared/utils/colors.scss";
+.header {
+  text-align: right;
+}
+.container {
+  padding: 0px 30px 30px !important;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+.headingStyle {
+  font-size: 27px;
+  font-family: PoppinsSemiBold;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 12px;
+  color: $BLACK;
+}
+
+.btnStyle {
+  background-color: $PRIMARY;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 8px;
+  font-family: InterBold;
+  font-size: 12px;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .container {
+    padding: 0px 25px 25px !important;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+}

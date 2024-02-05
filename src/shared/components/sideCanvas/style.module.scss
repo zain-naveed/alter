@@ -1,0 +1,31 @@
+@import "../sideNav/style.module.scss";
+.backDropContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 110;
+  padding: 0px !important;
+  transition: visibility 0.2s;
+}
+
+.mainContainer {
+  background-color: white;
+  max-width: 256px;
+  height: 100%;
+  padding: 0px !important;
+  overflow-y: auto;
+  transition: margin-left 0.3s;
+}
+
+.hidden {
+  margin-left: -256px;
+}
+
+.shown {
+  margin-left: 0px;
+}
+
+.mainContainer::-webkit-scrollbar {
+  display: none;
+}

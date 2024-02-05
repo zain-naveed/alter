@@ -1,0 +1,97 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+.search_result_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 42px;
+  align-items: center;
+  padding-top: 51px;
+}
+.paddingLeft {
+  padding-left: 7px;
+  color: $SECONDARY;
+}
+.headingStyle {
+  font-family: PoppinsSemiBold;
+  font-size: 32px;
+}
+.titleStyle {
+  font-family: PoppinsMedium;
+  font-size: 18px;
+  color: $GREY;
+}
+.tab_margin {
+  margin-left: 42px;
+}
+
+.tab_container {
+  margin-top: 31px;
+}
+.tab_container {
+  margin-top: 31px;
+}
+
+.noContentText {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  max-width: 366px;
+}
+.noContentTextBold {
+  font-family: InterSemiBold;
+  font-size: 14px;
+  color: $GREY;
+}
+
+.contentContainer {
+  min-height: 360px;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+@media screen and (max-width: 390px) {
+  .search_result_container {
+    padding: 0 40px;
+    padding-top: 41px;
+  }
+  .headingStyle {
+    font-size: 17px;
+  }
+  .titleStyle {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 500px) {
+  .headingStyle {
+    font-size: 21px;
+  }
+  .titleStyle {
+    font-size: 11px;
+  }
+  .search_result_container {
+    padding: 0 40px;
+    padding-top: 41px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 548px) {
+  .headingStyle {
+    font-size: 26px;
+  }
+  .titleStyle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 548px) and (max-width: 768px) {
+  .headingStyle {
+    font-size: 26px;
+  }
+
+  .titleStyle {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,193 @@
+@import "shared/utils/colors.scss";
+.leftPaddding {
+  padding-left: 46px;
+}
+.tabsContainerNoBorderBottom {
+  position: relative;
+  height: 30px;
+}
+.tab_container_border {
+  width: 100%;
+  height: 1.3px;
+  border-radius: 2px;
+  position: relative;
+  bottom: -4px;
+  top: 0;
+  background: #e4e4e4;
+}
+
+.tabsContainer {
+  position: relative;
+  height: 45px;
+  overflow-x: auto;
+  position: relative;
+  top: 6px;
+  z-index: 2;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.activeTabContainer {
+  padding-right: 25px;
+  //   border-bottom: 2px solid #e4e4e4;
+}
+
+.activeTab {
+  font-size: 14px;
+  padding-bottom: 8px;
+  position: relative;
+  top: -1.5px;
+  font-family: "PoppinsMedium";
+  cursor: pointer;
+  min-height: 28px;
+  white-space: nowrap;
+  color: $SECONDARY;
+  font-weight: 600;
+}
+
+.activeTabThumb {
+  height: 3px;
+  background-color: $SECONDARY;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+}
+
+.inActiveTab {
+  font-size: 14px;
+  padding-bottom: 8px;
+  position: relative;
+  top: -1.5px;
+  font-family: "PoppinsMedium";
+  color: #808191;
+  cursor: pointer;
+  min-height: 28px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 455px) {
+  .activeTab {
+    font-size: 11px;
+    padding-bottom: 4px;
+    position: relative;
+    top: -1.5px;
+  }
+  .inActiveTab {
+    font-size: 11px;
+    padding-bottom: 4px;
+    position: relative;
+    top: -1.5px;
+  }
+  .activeTabContainer {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 455px) and (max-width: 500px) {
+  .activeTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    position: relative;
+    top: 0.15px;
+  }
+  .inActiveTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    position: relative;
+    top: 0.15px;
+  }
+  .activeTabContainer {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 576px) {
+  .tabsContainer {
+    width: 95%;
+    position: relative;
+    top: 7px;
+    z-index: 100;
+  }
+  .tabsContainerNoBorderBottom {
+    width: 95%;
+  }
+  .activeTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    top: 0.15px;
+  }
+  .inActiveTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    top: 0.15px;
+  }
+  .activeTabContainer {
+    padding-right: 25px;
+  }
+  .noPaddingContainer {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .activeTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    top: 0.15px;
+  }
+  .inActiveTab {
+    font-size: 15px;
+    padding-bottom: 7px;
+    top: 0.15px;
+  }
+  .activeTabContainer {
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .activeTab {
+    font-size: 15px;
+
+    top: -1px;
+  }
+  .inActiveTab {
+    font-size: 15px;
+  }
+  .activeTabContainer {
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .activeTab {
+    font-size: 16px;
+    top: -1.5px;
+  }
+  .inActiveTab {
+    font-size: 16px;
+    top: -1.5px;
+  }
+  .activeTabContainer {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabsContainer {
+    width: 95%;
+    position: relative;
+    top: 5px;
+    z-index: 100;
+  }
+  .leftPaddding {
+    padding-left: 6px;
+  }
+}
+.tab_container {
+  margin-top: 31px;
+}
+.tab_container {
+  margin-top: 31px;
+}

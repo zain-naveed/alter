@@ -1,0 +1,24 @@
+@import "shared/utils/colors.scss";
+.topLevelcontainer {
+  overflow-y: auto;
+}
+.title {
+  font-size: 18px;
+  font-family: PoppinsMedium;
+  color: $BLACK;
+  text-align: left;
+}
+
+.btnStyle {
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 16px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $BLACK;
+  border: 0px;
+  outline: 0px;
+  font-family: InterBold;
+  font-size: 14px;
+}

@@ -1,0 +1,78 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+.container_padding {
+  padding: 12px 43px !important;
+  text-align: left;
+  background-color: white;
+}
+.firstHeading {
+  font-size: 24px;
+  font-family: PoppinsMedium;
+  color: $BLACK;
+}
+.secondHeading {
+  font-size: 48px;
+  font-family: PoppinsSemiBold;
+  color: $BLACK;
+}
+.margin_input {
+  margin: 23px 0;
+}
+.label {
+  color: $GREY !important;
+}
+.right {
+  text-align: right;
+}
+.buttonWidth {
+  width: 178px;
+  background-color: #6c5dd3;
+  color: white;
+  height: 50px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .firstHeading {
+    font-size: 15px;
+  }
+  .secondHeading {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .firstHeading {
+    font-size: 19px;
+  }
+  .secondHeading {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .firstHeading {
+    font-size: 21px;
+  }
+  .secondHeading {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .firstHeading {
+    font-size: 21px;
+  }
+  .secondHeading {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .firstHeading {
+    font-size: 24px;
+  }
+  .secondHeading {
+    font-size: 48px;
+  }
+}

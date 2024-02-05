@@ -1,0 +1,17 @@
+.padding_container{
+    text-align: left;
+    padding: 0 46px;
+}
+.setting_heading{
+    margin-top: 43px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "PoppinsMedium";
+}
+@media screen and (max-width:500px) {
+
+    .padding_container{
+    text-align: left;
+    padding: 0 6px;
+}
+}

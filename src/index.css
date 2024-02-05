@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: url("../src/assets/fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: "InterMedium";
+  src: url("../src/assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "InterRegular";
+  src: url("../src/assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("../src/assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../src/assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("../src/assets/fonts/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("../src/assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf");
+}
+.pointer{
+  cursor: pointer;
+}
+.Toastify__toast-body > div:last-child{
+  text-align: left !important;
+}

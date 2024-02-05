@@ -1,0 +1,77 @@
+@import "./../customInput/style.module.scss";
+
+.optionsContainer {
+  position: absolute;
+  bottom: 0;
+  max-width: 225px !important;
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 65px;
+  right: 30px;
+  z-index: 3;
+  height: fit-content;
+  text-align: left;
+}
+
+.optionContainer {
+  width: 100%;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  min-height: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.optionContainer:hover {
+  background-color: $ULTRA_LIGHT_GREY;
+}
+
+.optionLabel {
+  font-family: PoppinsMedium;
+  font-size: 13px;
+  color: $BLACK;
+  text-align: left;
+}
+.iconSize {
+  height: 18px;
+  width: 18px;
+}
+
+.icon ellipse {
+  stroke: $BLACK;
+}
+.icon rect {
+  stroke: $BLACK;
+}
+.icon circle {
+  stroke: $BLACK;
+}
+.icon path {
+  stroke: $BLACK;
+}
+
+@media screen and (max-width: 900px) {
+  .optionsContainer {
+    top: 65px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .optionsContainer {
+    top: 62px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .optionsContainer {
+    top: 60px;
+    right: 15px;
+  }
+}

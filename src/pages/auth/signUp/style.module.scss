@@ -1,0 +1,88 @@
+@import "shared/components/authWrapper/style.module.scss";
+@import "shared/utils/colors.scss";
+.signupContainer {
+  background-color: white;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.photoContainer {
+  width: fit-content !important;
+}
+.proilePhotoInput {
+  display: none;
+}
+
+.signAvatarImgStyle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.cameraIconStyleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #6c5dd3;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.termsCheckBox {
+  color: #ff754c;
+  background-color: transparent;
+  border: 1px solid #ff754c;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+}
+
+.termsCheckBoxActive {
+  background-color: #ff754c;
+  border: 1px solid #ff754c;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+}
+
+.termsText {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: #808191;
+}
+
+.termsTextHighlighted {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: #11142d;
+}
+
+.optionsContainer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 50px;
+  right: 0px;
+  z-index: 3;
+  height: fit-content;
+}
+.termsError{
+  color: #ea5b5b;
+    font-size: 12px;
+    text-align: left;
+}

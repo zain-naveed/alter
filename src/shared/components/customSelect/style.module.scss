@@ -1,0 +1,41 @@
+@import "./../customInput/style.module.scss";
+
+.selectionStyle {
+  width: 100%;
+  background-color: #f8f8f9;
+  border: 0px;
+  outline: 0;
+  font-family: InterRegular;
+  font-size: 14px;
+  text-align: left;
+}
+
+.optionsContainer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 50px;
+  right: -5px;
+  z-index: 3;
+  height: fit-content;
+}
+
+.optionLabel {
+  width: 100%;
+  font-family: InterMedium;
+  font-size: 13px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-align: left;
+  min-height: 50px;
+}
+
+.optionLabel:hover {
+  background-color: $ULTRA_LIGHT_GREY;
+}

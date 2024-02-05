@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+}
+
+.authMainContainer {
+  background: url("../../../assets/images/auth-bg.jpg") no-repeat center center
+    fixed;
+  min-height: 100vh;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.blackWrapperContainer {
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.containerTitle {
+  font-family: PoppinsSemiBold;
+  font-size: 30px;
+  color: #11142d;
+}
+
+.divider {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.divider::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  margin-top: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #f0f3f6;
+  content: "";
+}
+
+.dividerTxt {
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  background: #fff;
+  font-weight: 500;
+  color: #808191;
+  font-size: 12px;
+  font-family: InterMedium;
+}
+
+.btmText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: InterMedium;
+  color: #808191;
+}
+
+.highlightBtmText {
+  font-size: 14px;
+  font-family: InterMedium;
+  color: #ff754c;
+  margin-bottom: 2px;
+}
+
+.highlightBtmText:hover {
+  cursor: pointer;
+}

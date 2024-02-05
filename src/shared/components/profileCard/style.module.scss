@@ -1,0 +1,368 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.profileContainer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  height: 180px;
+  width: 90%;
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px -1px $LIGHT_GREY;
+}
+
+.subContainer1 {
+  max-width: 70%;
+}
+
+.subContainer2 {
+  max-width: 30%;
+}
+.overflowElipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.profilePhotoContainer {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  border: 4px solid $DARKBLUE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePhoto {
+  height: 95px;
+  width: 95px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.profileTitle {
+  font-size: 40px;
+  font-family: PoppinsSemiBold;
+  color: $BLACK;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.profileUsername {
+  font-size: 15px;
+  font-family: PoppinsMedium;
+  color: $BLACK;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.profileStatsContainer {
+  width: 340px;
+}
+
+.profileCounter {
+  font-size: 15px;
+  font-family: InterRegular;
+  color: $GREY;
+}
+
+.activeFollowIconContainer {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $PRIMARY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.inActiveFollowIconContainer {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.donationIconContainer {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $SECONDARY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.subscribeBtnContainer {
+  width: 130px;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 13px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $BLACK;
+  border: 0px;
+  outline: 0px;
+  font-family: InterSemiBold;
+  font-size: 15px;
+}
+
+.editBtnContainer {
+  width: 146px;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 13px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $BLACK;
+  border: 0px;
+  outline: 0px;
+  font-family: InterSemiBold;
+  font-size: 15px;
+}
+
+.profileIcons {
+  height: 22px;
+  width: 22px;
+}
+.liveIcon {
+  height: 22px;
+  width: 22px;
+}
+
+.editIcon {
+  height: 22px;
+  width: 22px;
+}
+
+.liveIcon path {
+  stroke: white;
+  fill: white;
+  stroke-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .subContainer1 {
+    max-width: 100%;
+    width: 100%;
+  }
+  .subContainer2 {
+    max-width: 100%;
+    width: 100%;
+  }
+  .profileContainer {
+    height: 144px;
+    border-radius: 12px;
+    width: 95%;
+  }
+  .profilePhotoContainer {
+    height: 75px;
+    width: 75px;
+    border: 2.5px solid $DARKBLUE;
+  }
+  .profilePhoto {
+    height: 65px;
+    width: 65px;
+  }
+  .profileTitle {
+    font-size: 25px;
+  }
+  .profileUsername {
+    font-size: 11px;
+  }
+  .profileStatsContainer {
+    width: 240px;
+  }
+  .profileCounter {
+    font-size: 11px;
+  }
+  .activeFollowIconContainer {
+    height: 31px;
+    width: 31px;
+    border-radius: 9px;
+  }
+  .inActiveFollowIconContainer {
+    height: 31px;
+    width: 31px;
+    border-radius: 9px;
+  }
+  .donationIconContainer {
+    height: 31px;
+    width: 31px;
+    border-radius: 9px;
+  }
+  .subscribeBtnContainer {
+    width: 70%;
+    border-radius: 9px;
+    height: 31px;
+    font-size: 12px;
+  }
+  .editBtnContainer {
+    width: 100%;
+    border-radius: 9px;
+    height: 31px;
+    font-size: 12px;
+  }
+  .profileIcons {
+    height: 15px;
+    width: 15px;
+  }
+  .liveIcon {
+    height: 15px;
+    width: 15px;
+  }
+  .editIcon {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .profileContainer {
+    height: 144px;
+    border-radius: 15px;
+  }
+  .profilePhotoContainer {
+    height: 80px;
+    width: 80px;
+    border: 3px solid $DARKBLUE;
+  }
+  .profilePhoto {
+    height: 68px;
+    width: 68px;
+  }
+  .profileTitle {
+    font-size: 30px;
+  }
+  .profileUsername {
+    font-size: 11px;
+  }
+  .profileStatsContainer {
+    width: 256px;
+  }
+  .profileCounter {
+    font-size: 11px;
+  }
+  .activeFollowIconContainer {
+    height: 36px;
+    width: 36px;
+    border-radius: 11px;
+  }
+  .inActiveFollowIconContainer {
+    height: 36px;
+    width: 36px;
+    border-radius: 11px;
+  }
+  .donationIconContainer {
+    height: 36px;
+    width: 36px;
+    border-radius: 11px;
+  }
+  .subscribeBtnContainer {
+    width: 102px;
+    border-radius: 11px;
+    height: 36px;
+    font-size: 11px;
+  }
+  .editBtnContainer {
+    width: 102px;
+    border-radius: 11px;
+    height: 36px;
+    font-size: 11px;
+  }
+  .profileIcons {
+    height: 15px;
+    width: 15px;
+  }
+  .liveIcon {
+    height: 15px;
+    width: 15px;
+  }
+  .editIcon {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .profileContainer {
+    height: 180px;
+    border-radius: 19px;
+  }
+  .profilePhotoContainer {
+    height: 100px;
+    width: 100px;
+    border: 3px solid $DARKBLUE;
+  }
+  .profilePhoto {
+    height: 85px;
+    width: 85px;
+  }
+  .profileTitle {
+    font-size: 38px;
+  }
+  .profileUsername {
+    font-size: 14px;
+  }
+  .profileStatsContainer {
+    width: 320px;
+  }
+  .profileCounter {
+    font-size: 14px;
+  }
+  .activeFollowIconContainer {
+    height: 45px;
+    width: 45px;
+    border-radius: 13px;
+  }
+  .inActiveFollowIconContainer {
+    height: 45px;
+    width: 45px;
+    border-radius: 13px;
+  }
+  .donationIconContainer {
+    height: 45px;
+    width: 45px;
+    border-radius: 13px;
+  }
+  .subscribeBtnContainer {
+    border-radius: 13px;
+    height: 45px;
+    font-size: 14px;
+    width: 128px;
+  }
+
+  .editBtnContainer {
+    border-radius: 13px;
+    height: 45px;
+    font-size: 14px;
+    width: 128px;
+  }
+  .profileIcons {
+    height: 19px;
+    width: 19px;
+  }
+  .liveIcon {
+    height: 19px;
+    width: 19px;
+  }
+  .editIcon {
+    height: 19px;
+    width: 19px;
+  }
+}

@@ -1,0 +1,156 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+.mainContainer {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.videoContainer {
+  width: 620px;
+}
+.commentsSection {
+  width: 423px;
+  box-shadow: 0px 0px 10px 0px #e4e4e4;
+  overflow: auto;
+  margin-top: 10px !important;
+  border-radius: 20px;
+  max-height: 630px;
+  height: fit-content;
+}
+.description {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+.headingStyle {
+  font-size: 31.5px;
+  font-family: PoppinsSemiBold;
+  color: $BLACK;
+  text-align: left;
+}
+.iconStyle {
+  height: 24px;
+  width: 24px;
+}
+.iconStyle path {
+  stroke: $GREY;
+}
+.iconStyle circle {
+  stroke: $GREY;
+}
+.iconStyle ellipse {
+  stroke: $GREY;
+}
+.iconStyle rect {
+  stroke: $GREY;
+}
+
+.labelStyle {
+  font-family: PoppinsMedium;
+  font-size: 14px;
+  color: $GREY;
+  display: flex;
+  align-self: end;
+}
+
+.filterContainer {
+  min-width: 160px;
+}
+
+.commentListContainer {
+  height: 426px;
+  overflow-y: auto;
+}
+
+.commentListContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.commentListContainer::-webkit-scrollbar-thumb {
+  background-color: #ff754c;
+  border-radius: 100px;
+}
+
+.commentListContainer::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  background-color: #f1f3f6;
+}
+@media screen and (max-width: 576px) {
+  .videoContainer {
+    width: 100%;
+  }
+  .commentsSection {
+    width: 100%;
+  }
+  .description {
+    font-size: 13px;
+  }
+  .headingStyle {
+    font-size: 21px;
+  }
+  .filterContainer {
+    min-width: 130px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .videoContainer {
+    width: 100%;
+  }
+  .commentsSection {
+    width: 100%;
+  }
+  .description {
+    font-size: 13px;
+  }
+  .headingStyle {
+    font-size: 21px;
+  }
+  .filterContainer {
+    min-width: 145px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .videoContainer {
+    width: 100%;
+  }
+  .commentsSection {
+    width: 100%;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .headingStyle {
+    font-size: 31px;
+  }
+  .filterContainer {
+    min-width: 160px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .videoContainer {
+    width: 620px;
+  }
+  .commentsSection {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videoContainer {
+    width: 620px;
+  }
+  .commentsSection {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .videoContainer {
+    width: 620px;
+  }
+  .commentsSection {
+    width: 423px;
+  }
+}

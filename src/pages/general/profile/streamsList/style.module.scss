@@ -1,0 +1,95 @@
+@import "../style.module.scss";
+
+.selectionStyle {
+  width: 100%;
+  background-color: #f8f8f9;
+  border: 0px;
+  outline: 0;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.inputContainerStyle {
+  background-color: #f8f8f9;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.iconStyle path {
+  stroke: $BLACK !important;
+  stroke-width: 2;
+}
+
+.videosCountLabel {
+  font-size: 18px;
+  font-family: InterRegular;
+  color: $GREY;
+}
+
+@media screen and (max-width: 768px) {
+  .selectionStyle {
+    font-size: 11px;
+    text-align: left;
+  }
+  .inputContainerStyle {
+    height: 45px;
+    border-radius: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .iconStyle {
+    height: 19px;
+    width: 19px;
+  }
+  .videosCountLabel {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .selectionStyle {
+    font-size: 11px;
+    text-align: left;
+  }
+  .inputContainerStyle {
+    height: 45px;
+    border-radius: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .iconStyle {
+    height: 19px;
+    width: 19px;
+  }
+  .videosCountLabel {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .selectionStyle {
+    font-size: 14px;
+    text-align: left;
+  }
+  .inputContainerStyle {
+    height: 56px;
+    border-radius: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .videosCountLabel {
+    font-size: 18px;
+  }
+}

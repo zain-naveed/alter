@@ -1,0 +1,59 @@
+@import "./../customInput/style.module.scss";
+@import "../../utils/colors.scss";
+
+.PhoneInputInput {
+  outline: 0px;
+  border: 0px;
+  background: transparent;
+  font-family: InterRegular;
+  color: $BLACK;
+}
+
+.PhoneInputCountryIcon {
+  border-radius: 100% !important;
+  height: 24px !important;
+  width: 24px !important;
+  overflow: hidden !important;
+}
+
+.PhoneInputCountryIcon--border {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.PhoneInputCountryIconImg {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+  vertical-align: baseline !important;
+}
+.PhoneInputCountrySelectArrow {
+  border: 0px !important;
+  opacity: 1 !important;
+  transform: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 2px;
+}
+
+.PhoneInputInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: InterRegular;
+  color: $GREY;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+.PhoneInputInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: InterRegular;
+  color: $GREY;
+  font-size: 14px;
+}
+
+.PhoneInputInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: InterRegular;
+  color: $GREY;
+  font-size: 14px;
+}

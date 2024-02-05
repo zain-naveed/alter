@@ -1,0 +1,33 @@
+.logoContainer {
+  min-height: 81px;
+  background-color: white;
+}
+.contentContainer {
+  background-color: white;
+}
+nav {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+}
+
+.sideNavSubcontainerTitle {
+  font-size: 12px;
+  color: #808191;
+  font-family: InterMedium;
+  text-align: left;
+}
+
+.seperator {
+  height: 1px;
+  background-color: #e4e4e4;
+  width: 85%;
+  display: flex;
+  align-self: center;
+}
+.loader {
+  height: 57px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2px 0;
+}

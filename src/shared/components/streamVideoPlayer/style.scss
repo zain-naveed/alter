@@ -1,0 +1,242 @@
+@import "shared/utils/colors.scss";
+.video-js {
+  border-radius: 36px !important;
+}
+
+.video-js .vjs-tech {
+  border-radius: 32px !important;
+  background-color: transparent !important;
+}
+.video-js .vjs-modal-dialog {
+  border-radius: 32px !important;
+}
+
+.video-js .vjs-big-play-button {
+  background-color: rgb(27, 29, 33, 0.5);
+  border-color: rgb(27, 29, 33, 0);
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+}
+.video-js:hover .vjs-big-play-button {
+  background-color: rgb(27, 29, 33, 0.8);
+
+  border-color: rgb(27, 29, 33, 0);
+  /* opacity: 0.6; */
+  /* border-width: 1px;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px; */
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder {
+  color: $SECONDARY;
+  opacity: 1;
+  line-height: inherit !important;
+  font-size: 1.8em !important;
+}
+
+.vjs-icon-play:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  position: absolute;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.video-js .vjs-control-bar {
+  height: 36px !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-bottom-right-radius: 36px !important;
+  border-bottom-left-radius: 36px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.video-js .vjs-load-progress div {
+  background-color: #ffffff !important;
+  opacity: 0.2;
+}
+
+.video-js .vjs-progress-holder {
+  height: 0.25em !important;
+}
+.video-js .vjs-load-progress {
+  background-color: transparent;
+}
+.video-js .vjs-slider {
+  background-color: rgb(255, 255, 255, 0.2) !important;
+  /* opacity: 0.2; */
+}
+.video-js .vjs-current-time {
+  display: block;
+}
+
+.video-js .vjs-title-bar {
+  color: white;
+
+  /*
+    By default, do not show the title bar.
+  */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  font-size: 2em;
+  padding: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+/* 
+  Only show the title bar after playback has begun (so as not to hide
+  the big play button) and only when paused or when the user is 
+  interacting with the player.
+*/
+.video-js.vjs-paused.vjs-has-started .vjs-title-bar,
+.video-js.vjs-user-active.vjs-has-started .vjs-title-bar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-title-bar {
+  visibility: visible;
+  opacity: 0;
+}
+
+.vjs-title-bar-full-screen-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  min-height: 90px;
+}
+
+.vjs-title-bar-profile-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.vjs-title-bar-profile-container-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.vjs-title-bar-profile-container-text-title {
+  font-size: 18px;
+  font-family: PoppinsSemiBold;
+  color: white;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.vjs-title-bar-profile-container-text-subtitle {
+  font-size: 14px;
+  color: #b6b6b6;
+  margin-bottom: 2px;
+  font-family: InterRegular;
+}
+
+.vjs-title-bar-profile-container-text-description {
+  font-size: 21px;
+  font-family: PoppinsRegular;
+  color: white;
+  display: -webkit-box;
+  max-width: inherit;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: initial;
+}
+.vjs-title-bar-profile-conatiner-img-container {
+  padding: 2px;
+  border: 2px solid $DARKBLUE;
+  border-radius: 100%;
+}
+.vjs-title-bar-profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.vjs-title-bar-stats-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vjs-title-bar-stats-container-status-container {
+  background-color: #ff754c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  color: white;
+  min-height: 28px;
+}
+
+.vjs-title-bar-stats-container-status-container-text {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 13px;
+  font-family: InterMedium;
+}
+
+.vjs-title-bar-stats-container-viewer-counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vjs-title-bar-stats-containerr-viewer-counter-status-container {
+  background-color: rgba(27, 29, 33, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  color: white;
+  min-height: 34px;
+  margin-left: 10px;
+}
+
+.vjs-title-bar-stats-container-viewer-counter-container-text {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 13px;
+  font-family: InterSemiBold;
+}
+
+.vjs-title-bar-stats-container-viewer-counter-icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+}
+
+.vjs-title-bar-full-medium-container {
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 660px) {
+}

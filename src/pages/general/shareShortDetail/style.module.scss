@@ -1,0 +1,322 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.videoBoxLoader {
+  height: 623px;
+  border-radius: 36px;
+}
+
+.topLevelContainer {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.topLevelContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.shortContainer {
+  position: relative;
+}
+.bgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.linearGrad {
+  height: 100%;
+  width: 100%;
+  background-color: $BLACK;
+  backdrop-filter: blur(35px);
+  z-index: -1;
+}
+.background_Color {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 29, 33, 0.7) -9.01%,
+    rgba(29, 31, 34, 0.0001) 43.79%,
+    rgba(27, 29, 33, 0.7) 103.64%
+  ) !important;
+}
+.shortContentContainer {
+  z-index: 2;
+}
+.crossIconStyle {
+  position: relative;
+  top: -110px;
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  background-color: rgba(228, 228, 228, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+.crossIconStyle2 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgba(228, 228, 228, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+.btnStyle {
+  background-color: $SECONDARY;
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+}
+
+.btnCount {
+  font-size: 14px;
+  font-family: PoppinsMedium;
+  color: white;
+  align-self: center;
+}
+
+.btnCountLoader {
+  height: 14px;
+  align-self: center;
+  width: 90%;
+}
+
+.inActivebtnStyle {
+  background-color: rgba(228, 228, 228, 0.12);
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+}
+
+.inActivebtnStyle svg path {
+  stroke: white;
+}
+
+.inActivebtnStyle svg rect {
+  stroke: white;
+}
+
+.inActivebtnStyle svg ellipse {
+  stroke: white;
+}
+
+.inActivebtnStyle svg circle {
+  stroke: white;
+}
+
+.btnIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.commentContainer {
+  box-shadow: 0px 0px 2px 0px $LIGHT_GREY;
+  overflow: auto;
+  border-radius: 24px;
+  max-height: 776px;
+  width: 100%;
+  height: fit-content;
+}
+
+.arrowContainer {
+  background-color: rgba(228, 228, 228, 0.12);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnIconStyle2 {
+  height: 8px;
+  width: 14px;
+}
+.disableArrow {
+  background: grey;
+  cursor: not-allowed !important;
+}
+
+@media screen and (max-width: 768px) {
+  .crossIconStyle2 {
+    right: 10px;
+  }
+  .btnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  .inActivebtnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  .btnIconStyle {
+    height: 20px;
+    width: 20px;
+  }
+  .btnCount {
+    font-size: 12px;
+  }
+  .btnCountLoader {
+    height: 12px;
+    width: 90%;
+  }
+  .crossIconStyle {
+    height: 46px;
+    width: 46px;
+  }
+  .arrowContainer {
+    width: 26px;
+    height: 26px;
+  }
+  .btnIconStyle2 {
+    height: 6px;
+    width: 12px;
+  }
+  .videoBoxLoader {
+    height: 278px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .crossIconStyle {
+    top: -20px;
+  }
+  .btnStyle {
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+  }
+  .inActivebtnStyle {
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+  }
+  .btnIconStyle {
+    height: 24px;
+    width: 24px;
+  }
+  .btnCount {
+    font-size: 14px;
+  }
+  .btnCountLoader {
+    height: 14px;
+    width: 90%;
+  }
+  .videoBoxLoader {
+    height: 371px;
+    border-radius: 26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .crossIconStyle {
+    top: -20px;
+    height: 40px;
+    width: 40px;
+  }
+  .btnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  .inActivebtnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  .btnIconStyle {
+    height: 20px;
+    width: 20px;
+  }
+  .btnCount {
+    font-size: 12px;
+  }
+  .btnCountLoader {
+    height: 12px;
+    width: 90%;
+  }
+  .crossIconStyle {
+    height: 46px;
+    width: 46px;
+  }
+  .videoBoxLoader {
+    height: 453px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crossIconStyle {
+    top: -20px;
+    height: 56px;
+    width: 56px;
+  }
+  .btnStyle {
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+  }
+  .inActivebtnStyle {
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+  }
+  .btnIconStyle {
+    height: 24px;
+    width: 24px;
+  }
+  .btnCount {
+    font-size: 14px;
+  }
+  .btnCountLoader {
+    height: 14px;
+    width: 90%;
+  }
+  .arrowContainer {
+    width: 36px;
+    height: 36px;
+  }
+  .btnIconStyle2 {
+    height: 8px;
+    width: 14px;
+  }
+  .videoBoxLoader {
+    height: 538px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .crossIconStyle {
+    top: -50px;
+  }
+  .videoBoxLoader {
+    height: 623px;
+    border-radius: 36px;
+  }
+}

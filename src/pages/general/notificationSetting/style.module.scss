@@ -1,0 +1,31 @@
+.container_top_margin {
+  margin-top: 46px;
+}
+.heading {
+  font-size: 22px;
+  font-family: PoppinsSemiBold;
+}
+.top_margin {
+  margin-top: 22px;
+}
+.disable_don {
+  margin-bottom: 47px;
+}
+.donation_heading {
+  font-size: 15px;
+  font-family: PoppinsSemiBold;
+}
+.donation_title {
+  margin-top: 11px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "InterRegular";
+  color: #808191;
+  max-width: 540px;
+}
+@media screen and (max-width: 500px) {
+  .notification_container {
+    min-width: 80%;
+    width: fit-content;
+  }
+}

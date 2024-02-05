@@ -1,0 +1,107 @@
+@import "shared/utils/colors.scss";
+.header {
+  text-align: right;
+}
+.container {
+  padding: 0px 20px 20px !important;
+}
+.pointer {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+.headingStyle {
+  font-size: 27px;
+  font-family: PoppinsSemiBold;
+}
+
+.subtitle {
+  font-family: InterRegular;
+  font-size: 12px;
+  color: $BLACK;
+}
+.cancelbtnStyle {
+  background-color: $ULTRA_LIGHT_GREY;
+  color: $GREY;
+  height: 45px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 200px;
+}
+.deletebtnStyle {
+  background-color: $PRIMARY;
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: InterBold;
+  font-size: 14px;
+  width: 100%;
+}
+
+.fieldContainer {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  background-color: $ULTRA_LIGHT_GREY;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trashIcon {
+  height: 140px;
+  width: 140px;
+}
+
+@media screen and (max-width: 576px) {
+  .headingStyle {
+    font-size: 25px;
+  }
+  .container {
+    padding: 0px 25px 25px !important;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+  .trashIcon {
+    height: 120px;
+    width: 120px;
+  }
+  .cancelbtnStyle {
+    height: 40px;
+    width: 150px;
+  }
+  .deletebtnStyle {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .modalContent {
+    width: 100% !important;
+  }
+  .trashIcon {
+    height: 140px;
+    width: 140px;
+  }
+  .cancelbtnStyle {
+    height: 50px;
+    width: 200px;
+  }
+  .deletebtnStyle {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headingStyle {
+    font-size: 27px;
+  }
+  .trashIcon {
+    height: 140px;
+    width: 140px;
+  }
+}

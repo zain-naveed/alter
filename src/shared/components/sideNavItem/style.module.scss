@@ -1,0 +1,122 @@
+@import "../../utils/colors.scss";
+
+.sideNavItemContainer {
+  height: 56px;
+  min-height: 56px;
+  width: 216px;
+  border-radius: 12px;
+  align-self: center;
+  transition: width 0.4s;
+}
+
+.shortSideNavItemContainer {
+  height: 56px;
+  min-height: 56px;
+  width: 56px;
+  border-radius: 12px;
+  align-self: center;
+  transition: width 0.4s;
+}
+
+.activeSideNavItem {
+  background-color: $PRIMARY;
+}
+
+.activeSideNavItem label {
+  color: white;
+}
+
+.activeSideNavItem svg path {
+  stroke: white;
+}
+.activeSideNavItem svg rect {
+  stroke: white;
+}
+.activeSideNavItem svg circle {
+  stroke: white;
+}
+.activeSideNavItem svg ellipse {
+  stroke: white;
+}
+
+.inActiveSideNavItem label {
+  color: $GREY;
+}
+
+.inActiveSideNavItem svg path {
+  stroke: $GREY;
+}
+
+.inActiveSideNavItem:hover {
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 12px;
+}
+
+.sideListItemLabel {
+  font-size: 14px;
+  color: $GREY;
+  font-family: InterSemiBold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: inherit;
+}
+
+.sideNavUserImg {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.wifiIcon path {
+  stroke: $SECONDARY !important;
+  fill: $SECONDARY !important;
+}
+
+.onlineStatusContainer {
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenDiv {
+  height: 8px;
+  width: 8px;
+  background-color: $GREEN;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .sideNavItemContainer {
+    width: 56px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .sideNavItemContainer {
+    width: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sideNavItemContainer {
+    width: 56px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sideNavItemContainer {
+    width: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sideNavItemContainer {
+    width: 216px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .sideNavItemContainer {
+    width: 216px;
+  }
+}

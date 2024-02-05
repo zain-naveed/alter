@@ -1,0 +1,14 @@
+@import "shared/utils/colors.scss";
+.noContentText {
+    font-family: InterRegular;
+    font-size: 14px;
+    color: $GREY;
+    max-width: 366px;
+  }
+  .mainContainer{
+    min-height: 350px;
+  }
+  .notFound{
+
+      width: 125px;
+  }

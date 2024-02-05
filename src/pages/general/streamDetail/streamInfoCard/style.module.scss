@@ -1,0 +1,235 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.streamInfoContainer {
+  border-bottom: 1px solid $ULTRA_LIGHT_GREY;
+}
+
+.btnStyle {
+  background-color: $SECONDARY;
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSmStyle {
+  background-color: $SECONDARY;
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+}
+
+.btnIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.inActivebtnStyle {
+  background-color: rgba(228, 228, 228, 0.25);
+  color: $GREY;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterSemiBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inActivesmbtnStyle {
+  background-color: rgba(228, 228, 228, 0.25);
+  color: white;
+  height: 56px;
+  border: 0px;
+  border-radius: 16px;
+  font-family: InterBold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+}
+
+.btnCount {
+  font-size: 14px;
+  font-family: PoppinsMedium;
+  color: $GREY;
+  align-self: center;
+}
+
+.inActivesmbtnStyle svg path {
+  stroke: $GREY;
+}
+
+.inActivesmbtnStyle svg rect {
+  stroke: $GREY;
+}
+
+.inActivesmbtnStyle svg ellipse {
+  stroke: $GREY;
+}
+
+.inActivesmbtnStyle svg circle {
+  stroke: $GREY;
+}
+
+.likeBtn {
+  width: 110px;
+}
+.commentBtn {
+  width: 140px;
+}
+.shareBtn {
+  width: 114px;
+}
+
+.inActivebtnStyle svg path {
+  stroke: $GREY;
+}
+
+.inActivebtnStyle svg rect {
+  stroke: $GREY;
+}
+
+.inActivebtnStyle svg ellipse {
+  stroke: $GREY;
+}
+
+.liveIconContainer {
+  background-color: $SECONDARY;
+  width: 78px;
+  height: 26px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.liveLabel {
+  font-family: InterMedium;
+  font-size: 13px;
+  color: white;
+}
+
+.liveIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.streamtitle {
+  font-family: PoppinsSemiBold;
+  font-size: 24px;
+  color: $BLACK;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: inherit;
+}
+
+.streamtitleLoader1 {
+  height: 24px;
+  width: 90%;
+}
+
+.streamtitleLoader2 {
+  height: 24px;
+  width: 20%;
+}
+
+.streamDescLoader1 {
+  height: 14px;
+  width: 90%;
+}
+
+.streamDescLoader2 {
+  height: 14px;
+  width: 40%;
+}
+
+.streamDesc {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: inherit;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .likeBtn {
+    width: 90px;
+  }
+  .commentBtn {
+    width: 120px;
+  }
+  .shareBtn {
+    width: 94px;
+  }
+  .btnStyle {
+    height: 46px;
+    border-radius: 13px;
+    font-family: InterSemiBold;
+    font-size: 12px;
+  }
+  .inActivebtnStyle {
+    height: 46px;
+    border-radius: 13px;
+    font-family: InterSemiBold;
+    font-size: 12px;
+  }
+  .btnIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .streamtitle {
+    font-size: 21px;
+  }
+  .streamtitleLoader1 {
+    height: 21px;
+  }
+  .streamtitleLoader2 {
+    height: 21px;
+  }
+  .streamDescLoader1 {
+    height: 13px;
+  }
+  .streamDescLoader2 {
+    height: 13px;
+  }
+  .streamDesc {
+    font-size: 13px;
+  }
+  .liveLabel {
+    font-size: 12px;
+  }
+  .liveIcon {
+    width: 14px;
+    height: 14px;
+  }
+  .liveIconContainer {
+    width: 68px;
+    height: 20px;
+    border-radius: 7px;
+  }
+}

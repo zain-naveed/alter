@@ -1,0 +1,104 @@
+@import "shared/utils/colors.scss";
+.userIcon {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+  }
+  .title {
+    height: 13px;
+    width: 80%;
+  }
+.comment_container {
+  position: relative;
+//   &:hover {
+//     background-color: $LIGHT_GREY;
+//     border-radius: 12px;
+//   }
+}
+.justifyText {
+  text-align: left;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.avatar_name,
+.avatar_time {
+  font-family: InterMedium;
+  font-size: 13px;
+  color: $BLUE;
+}
+.avatar_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.avatar_name_loader{
+    height: 13px;
+    width: 100px;
+    height: 13px;
+}
+.comment_para_loader{
+    height: 13px;
+    width: 400px;
+    height: 13px;
+}
+.comment_second_para_loader{
+    height: 13px;
+    width: 300px;
+    height: 13px;
+}
+.avatar_time {
+  color: $GREY;
+  margin-left: 7px;
+}
+.comment_para {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  // -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+.own_comment {
+  background: #ff754c12;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left: 5px solid $SECONDARY;
+  &:hover {
+    background-color: $SECONDARY;
+    border-left: 5px solid $BLUE;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+}
+
+.own_comment .avatar_name {
+  color: $SECONDARY;
+}
+
+.own_comment:hover .comment_para,
+.own_comment:hover .avatar_time,
+.own_comment:hover .avatar_name {
+  color: white;
+}
+
+.own_comment:hover .icon circle {
+  stroke: white;
+  fill: white;
+}
+
+@media screen and (max-width: 576px) {
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}

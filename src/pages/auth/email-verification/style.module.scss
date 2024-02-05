@@ -1,0 +1,20 @@
+@import "../../../shared/components/authWrapper/style.module.scss";
+@import "../../../shared/utils/colors.scss";
+
+.emailVerifyContainer {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  border-radius: 5px;
+}
+.subTitle {
+  font-size: 14px;
+  font-family: InterRegular;
+  color: $BLACK;
+}
+.maxWidth {
+  max-width: 630px;
+}

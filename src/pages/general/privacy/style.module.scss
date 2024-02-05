@@ -1,0 +1,131 @@
+@import "shared/utils/colors.scss";
+
+.privacyContainer {
+  margin-top: 31px;
+  padding-bottom: 41px;
+  position: relative;
+  min-height: 400px;
+}
+
+.paragraph_container_loader {
+  height: 14px;
+}
+
+.paragraph_container,
+.font {
+  font-family: "PoppinsRegular";
+  color: $GREY;
+  word-break: break-all;
+  position: relative;
+  z-index: 1;
+}
+.space {
+  margin-top: 25px;
+}
+// ================================= Gradient Colors
+.gradient_light_blue,
+.gradient_light_yellow,
+.gradient_light_accent.gradient_green {
+  background: #cfc8ff;
+  position: absolute;
+  top: 129px;
+  height: 200px;
+  width: 300px;
+  right: 0;
+  filter: blur(170px);
+}
+.gradient_light_yellow {
+  background: #fae4b6;
+  left: 0;
+  top: 662px;
+}
+.gradient_light_accent {
+  background: #ff9a7b;
+  top: 502px;
+  position: absolute;
+  // top: 0;
+  height: 200px;
+  width: 300px;
+  // right: 0;
+  top: 1200px;
+  filter: blur(250px);
+  right: 0px;
+  // filter: blur(189px);
+}
+.gradient_light_blue_two {
+  background: #cfc8ff;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  right: 0px;
+  bottom: 563px;
+  filter: blur(170px);
+}
+.gradient_green {
+  background: #a5cea1;
+  top: 1002px;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  right: 0;
+  filter: blur(250px);
+
+  left: 0;
+  top: 1505px;
+  z-index: 0;
+}
+.gradient_second_yellow {
+  background: #fae4b6;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  right: 0;
+  filter: blur(180px);
+
+  left: 0;
+  // top: 1705px;
+  z-index: 0;
+  bottom: 200px;
+}
+@media screen and (max-width: 500px) {
+  .gradient_light_accent,
+  .gradient_light_blue_two {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .gradient_light_accent,
+  .gradient_light_blue_two {
+    right: 0;
+  }
+}
+// ================================= Gradient End Color
+.heading {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "PoppinsSemiBold";
+}
+ul {
+  --icon-space: 1.4em;
+  list-style: none;
+  padding: 0 !important;
+}
+
+.privacyList li {
+  padding-left: var(--icon-space);
+}
+.list_margin {
+  margin-top: 5px;
+}
+.privacyList li:before {
+  content: url("../../../assets/icons/list_diamond.svg"); /* FontAwesome Unicode */
+  display: inline-block;
+  margin-left: calc(var(--icon-space) * -1);
+  // width: 31px;
+  position: relative;
+  top: 5px;
+}
+.list_paragraph {
+  padding-top: 4px;
+  padding-left: 10px;
+}

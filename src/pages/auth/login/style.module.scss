@@ -1,0 +1,39 @@
+@import "../../../shared/components/authWrapper/style.module.scss";
+@import "../../../shared/utils/colors.scss";
+
+.loginContainer {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.forgetPassText {
+  color: $PRIMARY;
+  font-size: 12px;
+  font-family: InterMedium;
+}
+
+.forgetPassText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.maxWidth {
+  max-width: 530px;
+}
+
+@media screen and (max-width: 500px) {
+  .loginContainer {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    border-radius: 5px;
+  }
+}

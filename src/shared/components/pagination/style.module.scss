@@ -1,0 +1,46 @@
+@import "shared/utils/colors.scss";
+.page_forward,
+.page_prev,
+.page_input {
+  color: white;
+  height: 43px;
+  border: 0px;
+  border-radius: 10px;
+  font-family: "InterBold";
+  width: 46px;
+  background-color: $SECONDARY;
+}
+.page_input {
+  background: none;
+  text-align: center;
+  color: $GREY;
+  border: 1px solid $ULTRA_LIGHT_GREY;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.page_prev {
+  background-color: $ULTRA_LIGHT_GREY;
+}
+.page_prev svg path {
+  stroke: $GREY;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.page_title {
+  font-family: "InterMedium";
+  color: #808191;
+  font-size: 12px;
+}
+@media screen and (max-width: 412px) {
+  .page_title {
+    display: none !important;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

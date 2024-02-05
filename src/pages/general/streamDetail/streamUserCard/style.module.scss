@@ -1,0 +1,245 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+
+.photoContainer {
+  border: 2px solid $DARKBLUE;
+  padding: 5px;
+  border-radius: 100%;
+  height: 58px;
+  width: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoContainerLoader {
+  height: 60px;
+  min-width: 60px;
+  border-radius: 100%;
+}
+
+.photoStyle {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+}
+
+.usertitle {
+  font-family: PoppinsSemiBold;
+  font-size: 24px;
+  color: $BLACK;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: inherit;
+}
+.usertitleLoader {
+  height: 24px;
+  width: 30%;
+}
+
+.userTag {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+
+.userTagLoader {
+  height: 14px;
+  width: 20%;
+}
+
+.statsContainerLoader {
+  height: 14px;
+  width: 300px;
+}
+.statsContainer {
+  width: 323px;
+}
+
+.statsLabel {
+  font-family: PoppinsMedium;
+  font-size: 14px;
+  color: $BLACK;
+}
+.userBioLoader1 {
+  height: 14px;
+  width: 90%;
+}
+.userBioLoader2 {
+  height: 14px;
+  width: 45%;
+}
+.userBio {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-width: inherit;
+}
+
+.activeFollowIconContainer {
+  height: 56px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $PRIMARY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.inActiveFollowIconContainer {
+  height: 56px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.donationIconContainer {
+  height: 56px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $SECONDARY;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px;
+}
+
+.subscribeBtnContainer {
+  width: 160px;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 13px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $BLACK;
+  border: 0px;
+  outline: 0px;
+  font-family: InterSemiBold;
+  font-size: 14px;
+}
+
+.profileIcons {
+  height: 22px;
+  width: 22px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 640px) {
+  .statsContainer {
+    width: inherit;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .photoContainer {
+    padding: 5px;
+    height: 53px;
+    width: 53px;
+  }
+
+  .photoContainerLoader {
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .photoStyle {
+    height: 43px;
+    width: 43px;
+  }
+
+  .usertitle {
+    font-size: 21px;
+  }
+  .usertitleLoader {
+    height: 21px;
+    width: 30%;
+  }
+
+  .userTag {
+    font-size: 13px;
+  }
+
+  .userTagLoader {
+    height: 13px;
+    width: 20%;
+  }
+
+  .statsLabel {
+    font-size: 13px;
+  }
+
+  .statsContainerLoader {
+    height: 13px;
+    width: 200px;
+  }
+
+  .userBio {
+    font-family: InterRegular;
+    font-size: 14px;
+    color: $GREY;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: inherit;
+  }
+  .activeFollowIconContainer {
+    height: 46px;
+    width: 46px;
+    border-radius: 11px;
+  }
+
+  .inActiveFollowIconContainer {
+    height: 46px;
+    width: 46px;
+    border-radius: 11px;
+  }
+
+  .donationIconContainer {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    border-radius: 11px;
+  }
+
+  .subscribeBtnContainer {
+    width: 140px;
+    background-color: $ULTRA_LIGHT_GREY;
+    border-radius: 11px;
+    height: 46px;
+    font-size: 13px;
+  }
+
+  .profileIcons {
+    height: 19px;
+    width: 19px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .statsContainerLoader {
+    height: 13px;
+    width: 200px;
+  }
+}
